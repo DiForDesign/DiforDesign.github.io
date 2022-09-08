@@ -243,7 +243,7 @@
 				</div>
 				<div class="col-12">
 					<div class="webgl-content">
-     					 <div id="unityContainer" style="width: 1280px; height: 720px"></div>
+     					 <div id="unityContainer" style="width: 100%"></div>
     					  <div class="footer">
        					 	 <div class="webgl-logo"></div>
        						 <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
@@ -290,7 +290,7 @@
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap-4.4.1.js"></script>
 	  
-	 <script src="../resources/unity-PF/TemplateData/UnityProgress.js"></script>
+	<script src="../resources/unity-PF/TemplateData/UnityProgress.js"></script>
     <script src="../resources/unity-PF/Build/UnityLoader.js"></script>
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "../resources/unity-PF/Build/painsonality_webtestBuild.json", {onProgress: UnityProgress});
