@@ -11,7 +11,7 @@
   <body>
 	
 	  
-	<!-- Modal -->
+	<!-- Modal:Coming Soon:id eModal -->
     <div class="modal fade" id="eModal" tabindex="-1" role="dialog" aria-labelledby="eModalLabel" aria-hidden="true">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
@@ -26,7 +26,27 @@
 		   You are more than welcomed to check it out later :>
  	     </div>
  	     <div class="modal-footer">
- 	       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>  
+	
+	<!-- Modal:Check Portfolio:id cModal -->
+    <div class="modal fade" id="cModal" tabindex="-1" role="dialog" aria-labelledby="cModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="cModalLabel">Portfolio only</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+ 	     </div>
+ 	     <div class="modal-body">
+ 	       Sorry that I am still working on the page you are about to visit. <br>
+		   However, you can see this project in my portfolio here. 
+ 	     </div>
+ 	     <div class="modal-footer">
+ 	       <a class="btn btn-primary" href="resources/files/Portfolio_Di.pdf" target="_blank">Download Portfolio <span class="badge badge-secondary">.PDF</span></a>
 	      </div>
 	    </div>
 	  </div>
@@ -50,6 +70,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="content_pages/content_LifeAmongAlgorithm.html">Life Among Algorithm</a>
+			  <div class="dropdown-divider"></div>	
               <a class="dropdown-item" data-toggle="modal" href="#eModal">Borough House(Coming Soon)</a>
             </div>
 			 
@@ -60,8 +81,9 @@
             Product Design
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Anti-vibration Metamaterial Glove</a>
-              <a class="dropdown-item" href="#">Lento</a>
+              <a class="dropdown-item" data-toggle="modal" href="#cModal">Anti-vibration Metamaterial Glove</a>
+              <a class="dropdown-item" data-toggle="modal" href="#cModal">Lento <span class="badge badge-info">Collab</span></a>
+			  <div class="dropdown-divider"></div>
 			  <a class="dropdown-item" data-toggle="modal" href="#eModal">Futurenome(Coming Soon)</a>
             </div>
 			  
@@ -72,7 +94,8 @@
             Graphics
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Shared Industrial Platform EMU</a>
+              <a class="dropdown-item" data-toggle="modal" href="#cModal">Shared Industrial Platform EMU<span class="badge badge-info">Collab</span></a>
+			  <div class="dropdown-divider"></div>	
             </div>
 			  
           </li>
@@ -82,8 +105,11 @@
             Interactive Programme
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item" href="content_pages/content_VRLivingPillar.html">VR LivingPillar</a>
+			  <a class="dropdown-item" data-toggle="modal" href="#" target="_blank">Painsonality Forest <span class="badge badge-info">Collab</span></a>
+			  <div class="dropdown-divider"></div>
               <a class="dropdown-item" data-toggle="modal" href="#eModal">VR Ecorotomoulding(Coming Soon)</a>
-			  <a class="dropdown-item" data-toggle="modal" href="#eModal">AR Anthropology(Coming Soon)</a>	
+			  <a class="dropdown-item" data-toggle="modal" href="#eModal">AR Anthropology(Coming Soon)</a>
             </div>
           </li>
 			
@@ -96,8 +122,8 @@
               <a class="dropdown-item" data-toggle="modal" href="#eModal">Hobby Works(Coming Soon)</a>
 			  <a class="dropdown-item" href="#contact-info">Contact Info</a>				
               <div class="dropdown-divider"></div>
-			  <a class="dropdown-item" href="resources/files/CV_Di.pdf" target="_blank">Download CV</a>
-			  <a class="dropdown-item" href="resources/files/Portfolio_Di.pdf" target="_blank">Download Portfolio</a>
+			  <a class="dropdown-item" href="resources/files/CV_Di.pdf" target="_blank">Download CV <span class="badge badge-secondary">.PDF</span></a>
+			  <a class="dropdown-item" href="resources/files/Portfolio_Di.pdf" target="_blank">Download Portfolio <span class="badge badge-secondary">.PDF</span></a>
             </div>
 			  
           </li>
@@ -110,23 +136,24 @@
       </div>
     </nav>
 	
+	<!-- Welcome message -->
+	<div class="alert alert-light margin-fromsides" role="alert">
+		Welcome! Scroll through or click on the navigation bar to see more of my works. Have fun exploring!
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  		  <span aria-hidden="true">&times;</span>
+  	    </button>
+	</div>
+	
+	<!-- Alert message -->
+	<div class="alert alert-info margin-fromsides" role="alert">
+  		Some contents may not be available at the moment, as I am still actively building this site.
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  		  <span aria-hidden="true">&times;</span>
+  	    </button>
+    </div>  
 	  
 	<!--carousel-->  
     <section>
-     <!-- <div class="jumbotron text-center mt-2 margin-fromsides drop-shadowed" style="background-image: url(images/hero.jpg); background-size: 120%; background-position: center center;">
-		  
-		  
-        <div class="container">
-          <div class="row" >
-            <div class="col-8 offset-4 offset-lg-6 col-lg-6">
-              <h1 class="text-left">I am Di,<br/>
-                A Multidisciplinary Designer. </h1><br/>
-              <p><a class="btn btn-primary btn-lg" href="#" role="button">More about me »</a></p>
-            </div>
-          </div>
-        </div>
-      </div> -->
-		
 		<div id="carouselExampleIndicators" class="carousel slide carousel-fade margin-fromsides" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -140,11 +167,11 @@
 					<h3 class="carousel-caption"></h3>
 				</div>
 				<div class="carousel-item">
-					<img class="d-block w-100" src="resources/images/banner2.jpg" alt="Second slide">
+					<a href="#eModal" data-toggle="modal"><img class="d-block w-100" src="resources/images/banner2.jpg" alt="Second slide"></a>
 					<h6 class="carousel-caption">A metamaterial glove concept.</h6>
 				</div>
 				<div class="carousel-item">
-					<img class="d-block w-100" src="resources/images/banner3.jpg" alt="Third slide">
+					<a href="content_pages/content_LifeAmongAlgorithm.html" target="_blank"><img class="d-block w-100" src="resources/images/banner3.jpg" alt="Third slide"></a>
 					<h6 class="carousel-caption">A poster campaign concept.</h6>
 				</div>
 			</div>
@@ -161,7 +188,7 @@
     <br>
 	  
 	<!--works-->  
-  <section>
+    <section>
       <div class="container" style="background-color:rgba(255,255,255,1);">
 		  
 		<!--title-->  
@@ -180,7 +207,7 @@
 			<div class="card-body">
 			  <h5 class="card-title">Life Among Algorithms</h5>
 				<p class="card-text">A poster campaign concept empowering AI algorithm influencees through raising awareness.</p>
-				<a href="#" class="btn btn-primary">More about this project >></a>
+				<a href="content_pages/content_LifeAmongAlgorithm.html" target="_blank" class="btn btn-primary">More about this project >></a>
 			</div>
 		  </div>
 		  <div class="card drop-shadowed" style="width: 25rem; margin-left: 5%; margin-right:5%;margin-bottom:30px;">
@@ -188,7 +215,7 @@
 			<div class="card-body">
 			  <h5 class="card-title">Anti-Vibration Metamaterial Glove</h5>
 				<p class="card-text">A glove concept adopting a novel metamterial structure to help reduce vibration from construction equiment.</p>
-				<a href="#" class="btn btn-primary">More about this project >></a>
+				<a href="#eModal" data-toggle="modal" class="btn btn-primary">More about this project >></a>
 			</div>
 		  </div>
 			
@@ -205,28 +232,28 @@
 		<!--other works-->
 		<div class="row justify-content-center"> 
 		  <div class="card" style="width: 13rem;margin-left: 2%; margin-right:2%;margin-bottom:30px;">
-				<img src="resources/images/thumbnail200x200_1.jpg" class="card-img-top" alt="AR Anthropology">
+				<a href="#eModal" data-toggle="modal"><img src="resources/images/thumbnail200x200_1.jpg" class="card-img-top" alt="AR Anthropology"></a>
 				<div class="card-body">
 				  <h5 class="card-title">AR Anthropology</h5>
 					<p class="card-text">Interactive Programme</p>
 				</div>
 			</div>
 		  <div class="card" style="width: 13rem;margin-left: 2%; margin-right:2%;margin-bottom:30px;">
-				<img src="resources/images/thumbnail200x200_2.jpg" class="card-img-top" alt="Ecorotomoulding">
+				<a href="#eModal" data-toggle="modal"><img src="resources/images/thumbnail200x200_2.jpg" class="card-img-top" alt="Ecorotomoulding"></a>
 				<div class="card-body">
 				  <h5 class="card-title">EcoRotomoulding</h5>
 					<p class="card-text">VR Programme</p>
 	      			</div>
 			</div>
 		  <div class="card" style="width: 13rem;margin-left: 2%; margin-right:2%;margin-bottom:30px;">
-				<img src="resources/images/thumbnail200x200_3.jpg" class="card-img-top" alt="Shared Industrial Platform EMU">
+				<a href="#cModal" data-toggle="modal"><img src="resources/images/thumbnail200x200_3.jpg" class="card-img-top" alt="Shared Industrial Platform EMU"></a>
 				<div class="card-body">
 				  <h5 class="card-title">Shared Industrial Platform EMU</h5>
 					<p class="card-text">Brochure</p>
 				</div>
 			</div>
 		  <div class="card" style="width: 13rem;margin-left: 2%; margin-right:2%;margin-bottom:30px;">
-				<img src="resources/images/thumbnail200x200_4.jpg" class="card-img-top" alt="Futurenome">
+				<a href="#eModal" data-toggle="modal"><img src="resources/images/thumbnail200x200_4.jpg" class="card-img-top" alt="Futurenome"></a>
 				<div class="card-body">
 				  <h5 class="card-title">Futurenome</h5>
 					<p class="card-text">Product Concept</p>
@@ -263,7 +290,7 @@ Having been in multicultural environments (China and the UK), I have developed m
       <div class="container">
         <div class="row">
           
-          <div class="col-md-4 col-12 col-xl-4">
+          <div class="col-md-6 col-12">
 			  <br/>
             <h3 class="text-center text-white" id="contact-info">GET IN TOUCH</h3>
             <address class="text-center text-white">

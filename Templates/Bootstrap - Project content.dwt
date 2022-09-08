@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TemplateBeginEditable name="doctitle" -->
     <title>- Content Page -</title>
+    <!-- TemplateEndEditable -->
     <!-- Bootstrap -->
     <link href="../css/bootstrap-4.4.1.css" rel="stylesheet">
+  <!-- TemplateBeginEditable name="head" -->
+  <!-- TemplateEndEditable -->
   </head>
   <body>
 	<!-- Modal:Coming Soon:id eModal -->
@@ -50,7 +54,8 @@
 	  </div>
 	</div>  
 	  
-	<!--top navbar-->  
+	<!--top navbar-->
+	<!-- TemplateBeginEditable name="navbar" --> 
     <nav id="topNav" class="navbar navbar-expand-lg navbar-dark bg-dark margin-fromsides corner-rounded">
       <a class="navbar-brand" href="#">DI BA<font size = "2"></font></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,7 +72,7 @@
             Sustainable Design
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../content_pages/content_LifeAmongAlgorithm.html">Life Among Algorithm</a>
+              <a class="dropdown-item" href="../content_pages/content_LifeAmongAlgorithm.html" target="_blank">Life Among Algorithm</a>
 			  <div class="dropdown-divider"></div>	
               <a class="dropdown-item" data-toggle="modal" href="#eModal">Borough House(Coming Soon)</a>
             </div>
@@ -103,7 +108,7 @@
             Interactive Programme
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			  <a class="dropdown-item" href="../content_pages/content_VRLivingPillar.html">VR LivingPillar</a>
+			  <a class="dropdown-item" data-toggle="modal" href="../content_pages/content_VRLivingPillar.html" target="_blank">VR LivingPillar</a>
 			  <a class="dropdown-item" data-toggle="modal" href="#" target="_blank">Painsonality Forest <span class="badge badge-info">Collab</span></a>
 			  <div class="dropdown-divider"></div>
               <a class="dropdown-item" data-toggle="modal" href="#eModal">VR Ecorotomoulding(Coming Soon)</a>
@@ -132,9 +137,11 @@
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="bootstrap-icons/search-white.svg" width="16px" style="margin-bottom:3px"></img></button>
         </form>-->
       </div>
-    </nav>  
-	 
-	<!-- Main content -->  
+    </nav>
+    <!-- TemplateEndEditable -->  
+	  
+	<!-- Main content -->
+	<!-- TemplateBeginEditable name="MainContents" -->  
     <div id="main" class="container mt-2">
       <div class="row" style="background-color: #e9ecef;">
         <div class="col-12">
@@ -160,6 +167,9 @@
 		
 		<!-- main paragraph -->  
 		<div class="col-12" style="padding-left: 5%; padding-right: 5%; padding-bottom: 5%">
+			<h2><em>Abstract</em></h2>
+			<p>Coming Soon</p>
+			<br>
 			
 			<h2><em>Overview</em></h2><br>
 			<div class="row" style="padding-bottom: 2%">
@@ -277,7 +287,8 @@
 		  
       </div>
     </div>
-    
+    <!-- TemplateEndEditable -->
+	  
     <!-- Article footer -->
 	<div class="row" style="margin-top:3%; margin-bottom:1%;padding-top:2%;padding-bottom: 2%; background-color: rgba(35,35,35,0.9)">
 			   <div class="col-12">
