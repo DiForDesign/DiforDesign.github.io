@@ -61,11 +61,12 @@ body {
   color: #212529;
   text-align: left;
   
-	background-image: url("../resources/images/bg_dim.jpg");
-        background-repeat: repeat;
+	background-image: url("../resources/images/bg_dark.jpg");
+        background-repeat:no-repeat;
 	    background-attachment: fixed;
 	    background-size: 100%;
         background-position: center;
+	background-color:#1f3b1c;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
