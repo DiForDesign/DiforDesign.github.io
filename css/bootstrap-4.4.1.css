@@ -617,11 +617,15 @@ pre code {
 }
 
 .corner-rounded {
-	border-radius: 20px;
+	border-radius: 7px;
 }
 
 .drop-shadowed {
-	box-shadow: 5px 5px 10px 0px gray
+	box-shadow: 5px 5px 10px 0px gray;
+}
+
+.drop-shadowed-dark {
+	box-shadow: 5px 5px 10px 0px black;
 }
 
 .text-split {

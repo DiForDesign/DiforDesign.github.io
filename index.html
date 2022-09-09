@@ -10,7 +10,6 @@
   </head>
   <body>
 	
-	  
 	<!-- Modal:Coming Soon:id eModal -->
     <div class="modal fade" id="eModal" tabindex="-1" role="dialog" aria-labelledby="eModalLabel" aria-hidden="true">
 	  <div class="modal-dialog" role="document">
@@ -52,8 +51,11 @@
 	  </div>
 	</div>  
 	  
+	
+	    
 	<!--top navbar-->  
-    <nav id="topNav" class="navbar navbar-expand-lg navbar-dark bg-dark margin-fromsides corner-rounded">
+	<div class="container">  
+    <nav id="topNav" class="navbar navbar-expand-lg navbar-dark bg-dark corner-rounded" style="margin-left:-17px; margin-right: -17px">
       <a class="navbar-brand" href="#">DI BA<font size = "2"></font></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -135,27 +137,35 @@
         </form>-->
       </div>
     </nav>
+	</div>
 	
 	<!-- Welcome message -->
-	<div class="alert alert-light margin-fromsides" role="alert">
+    <div class="container">
+	<div class="alert alert-info" style="margin-left:-16px; margin-right: -16px" role="alert">
 		Welcome! Scroll through or click on the navigation bar to see more of my works. Have fun exploring!
 		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
   		  <span aria-hidden="true">&times;</span>
   	    </button>
 	</div>
+	</div>
 	
 	<!-- Alert message -->
-	<div class="alert alert-info margin-fromsides" role="alert">
+	<div class="container">  
+	<div class="alert alert-warning" style="margin-left:-16px; margin-right: -16px" role="alert">
   		Some contents may not be available at the moment, as I am still actively building this site.
 		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
   		  <span aria-hidden="true">&times;</span>
   	    </button>
-    </div>  
-	  
+    </div>
+	</div>
+	 
+	
+  <div id="bg-sheet" class="container" style="background-color:rgba(255,255,255,1);">
+	
 	<!--carousel-->  
     <section>
-		<div class="container">
-		<div id="carouselExampleIndicators" class="carousel slide carousel-fade" style="margin-left:-16px; margin-right: -16px" data-ride="carousel">
+		<!--div class="container"-->
+		<div id="carouselExampleIndicators" class="carousel slide carousel-fade"  style="margin-left:-11px; margin-right: -11px; padding-top:5px" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -185,9 +195,9 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
-		</div>	
+		<!--/div-->	
     </section>
-    <br>
+    <br><br><br>
 	  
 	<!--works-->  
     <section>
@@ -217,12 +227,12 @@
 			<div class="card-body">
 			  <h5 class="card-title">Anti-Vibration Metamaterial Glove</h5>
 				<p class="card-text">A glove concept adopting a novel metamterial structure to help reduce vibration from construction equiment.</p>
-				<a href="#eModal" data-toggle="modal" class="btn btn-primary">More about this project >></a>
+				<a href="#cModal" data-toggle="modal" class="btn btn-primary">More about this project >></a>
 			</div>
 		  </div>
 			
         </div>
-		  
+		<br><br>  
 		<!--title-->  
 		<div class="row">
           <div class="col-12 text-center" style="margin-top:20px">
@@ -263,9 +273,9 @@
 			</div>
 			
 		</div>
+		<br><br>
     </div>
     </section>
-    <hr>
 	  
 	<!--about me-->
     <section>
@@ -285,8 +295,10 @@ Having been in multicultural environments (China and the UK), I have developed m
         </div>
       </div>
   </section>
-    <hr>
-	  
+	<br> 
+	
+  </div>
+	<hr> 
 	<!-- contact card-->  
     <div class="section" style="background-color: rgba(35,35,35,0.9)">
       <div class="container">
@@ -309,7 +321,7 @@ Having been in multicultural environments (China and the UK), I have developed m
       </div>
     </div>
     <hr>
-	  
+	 
 	<!--footer-->
     <footer class="text-center">
       <div class="container">
