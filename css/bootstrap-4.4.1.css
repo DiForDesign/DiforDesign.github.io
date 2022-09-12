@@ -61,12 +61,12 @@ body {
   color: #212529;
   text-align: left;
   
-	background-image: url("../resources/images/bg_dark_gradient.jpg");
+	/*background-image: url("../resources/images/bg_dark_gradient.jpg");
         background-repeat:no-repeat;
 	    background-attachment: fixed;
 	    background-size: 100%;
-        background-position: center;
-	background-color:#1f3b1c;
+        background-position: center;*/
+	background-color:#DCDCDC;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -6628,7 +6628,6 @@ a.close.disabled {
   right: 15%;
   bottom: 20px;
   left: 15%;
-  z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
