@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bg-theme {
+  background-color: #70BEEA !important;
+}
+
+.text-theme {
+  background-color: #70BEEA !important;
+}
+
+.project-card {
+  width:320px;
+  margin-left:1%;
+  margin-right:1%;
+  margin-bottom:10px;	
+}
