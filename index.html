@@ -118,7 +118,7 @@
             About
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			  <a class="dropdown-item" href="#about-me">More About Me</a>
+			  <a class="dropdown-item" onclick="scrollToElement('about-me')" style="cursor:pointer;">More About Me</a>
               <a class="dropdown-item" data-toggle="modal" href="#eModal">Hobby Works(Coming Soon)</a>
 			  <a class="dropdown-item" href="#contact-info">Contact Info</a>				
               <div class="dropdown-divider"></div>
@@ -163,12 +163,12 @@
     <div id="bg-sheet" class="container drop-shadowed" style="background-color:rgba(255,255,255,1);">
 	
 	  <!-- Title Block -->  
-	  <div id="title-block" style="background-color:rgba(255,255,255,1.00); padding-top:30px;">
-		<img src="resources/images/portrait_banner_mix.png" style="width:110%;position:relative;top:0px;left:-5%;z-index:10;">
+	  <div id="title-block" style="background-color:rgba(255,255,255,1.00); padding-top:0px;">
+		<img src="resources/images/portrati_banner_mix_new.png" style="width:120%;position:relative;top:0px;left:-10%;z-index:10;">
 		<!-- carousel -->
-		<div style="width:80%;
-					margin-left:24%;
-					margin-top:-27.5%;
+		<div style="width:70%;
+					margin-left:21%;
+					margin-top:-26.2%;
 					padding-bottom:20px;">
 		<section>
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -180,7 +180,7 @@
 			
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<a href="#cModal" data-toggle="modal"><img class="d-block w-100" src="resources/images/banner1.jpg" alt="First slide"></a>
+					<img class="d-block w-100" src="resources/images/banner1.jpg" alt="First slide">
 					<h6 class="carousel-caption">An anti-vibration metamaterial glove concept.</h3>
 				</div>
 				<div class="carousel-item">
@@ -203,16 +203,15 @@
 		</div>
     </section>
 		</div>
+		<img src="resources/images/title_Arrow.png" onclick="scrollToElement('projectOverview')" style="cursor:pointer;position:relative;width:10%;margin-top:-30%;margin-left:90%;z-index:50;">
 		
-		
-		
-	</div> 
+	  </div> 
       <br><br><br>
 	  
 	  <!--works-->  
       <section>
 		<!--Title-->  
-		<div class="row">
+		<div class="row" id="projectOverview">
 	 	  <div class="col-12 text-center bg-light">
 		 	  <br>
 			   <h1>PROJECTS</h1>
@@ -516,5 +515,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.4.1.js"></script>
+	<script src="js/custom.js"></script>
   </body>
 </html>
