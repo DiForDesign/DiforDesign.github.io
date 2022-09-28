@@ -118,9 +118,8 @@
             About
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			  <a class="dropdown-item" onclick="scrollToElement('about-me')" style="cursor:pointer;">More About Me</a>
-              <a class="dropdown-item" data-toggle="modal" href="#eModal">Hobby Works(Coming Soon)</a>
-			  <a class="dropdown-item" href="#contact-info">Contact Info</a>				
+			  <a class="dropdown-item cursor-pointer custom-scroll" onclick="scrollToElement('about-me')">More About Me</a>
+			  <a class="dropdown-item cursor-pointer custom-scroll" onclick="scrollToElement('contact-info')">Contact Info</a>				
               <div class="dropdown-divider"></div>
 			  <a class="dropdown-item" href="resources/files/CV_Di.pdf" target="_blank">Download CV <span class="badge badge-secondary">.PDF</span></a>
 			  <a class="dropdown-item" href="resources/files/Portfolio_Di.pdf" target="_blank">Download Portfolio <span class="badge badge-secondary">.PDF</span></a>
@@ -137,7 +136,6 @@
     </nav>
 	</div>
 	
-	
 	<!-- Welcome message -->
     <!--div class="container">
 	<div class="alert alert-info" style="margin-left:-16px; margin-right: -16px" role="alert">
@@ -151,16 +149,15 @@
 	<!-- Alert message -->
 	<div class="container">  
 	<div class="alert alert-warning" style="margin-left:-16px; margin-right: -16px" role="alert">
-  		Hey, welcome. Some contents may not be available at the moment, as I am still actively building this site.
+  		Hey, welcome. Some contents are subject to change, as I am still actively building this site.
 		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
   		  <span aria-hidden="true">&times;</span>
   	    </button>
     </div>
 	</div>
 	  
-	  
     <!--Main Content Sheet-->
-    <div id="bg-sheet" class="container drop-shadowed" style="background-color:rgba(255,255,255,1);">
+    <div id="bg-sheet" class="container" style="background-color:rgba(255,255,255,1);">
 	
 	  <!-- Title Block -->  
 	  <div id="title-block" style="background-color:rgba(255,255,255,1.00); padding-top:0px;">
@@ -206,21 +203,19 @@
 		<img src="resources/images/title_Arrow.png" onclick="scrollToElement('projectOverview')" style="cursor:pointer;position:relative;width:10%;margin-top:-30%;margin-left:90%;z-index:50;">
 		
 	  </div> 
-      <br><br><br>
-	  
+	  <hr>
 	  <!--works-->  
       <section>
 		<!--Title-->  
 		<div class="row" id="projectOverview">
-	 	  <div class="col-12 text-center bg-light">
+	 	  <div class="col-12 text-center title-ribbon">
 		 	  <br>
-			   <h1>PROJECTS</h1>
+			   <h1 class="title-font text-theme">PROJECTS</h1>
 			   <br>
 		   </div>
 		  </div>
+	    <!--Project-->
         <div class="container" style="background-color:rgba(255,255,255,1);">
-		  
-	      <!--Project-->
 		  <div class="row justify-content-center">
 		  <ul class="nav nav-tabs" id="myTab" role="tablist">
   			<li class="nav-item">
@@ -237,36 +232,36 @@
        		</li>
           </ul>
 		  </div>
-		  <div class="tab-content bg-light" id="myTabContent">
+		  <div class="tab-content" id="myTabContent" style="padding-top:10px;">
 		   <!--first tab-->
-           <div class="tab-pane fade show active" id="tab01" role="tabpanel" aria-labelledby="first-tab" style="margin-top:10px;">
+           <div class="tab-pane fade show active" id="tab01" role="tabpanel" aria-labelledby="first-tab">
 			  <div class="row justify-content-center"> 
 			  <!--first card-->
-              <div class="card bg-theme text-white project-card">
-				<a href="content_pages/content_LifeAmongAlgorithm.html"><img src="resources/images/thumbnail400x400_LAA.jpg" class="card-img-top" alt="LifeAmongAlgorithm"></a>
+              <div class="card bg-dark text-white project-card">
+				<a href="content_pages/content_LifeAmongAlgorithm.html"><img src="resources/images/thumbnail400x400_LAA.jpg" class="card-img-top card-image" alt="LifeAmongAlgorithm"></a>
 				<div class="card-body">
-					<h5 class="card-title">Life Among Algorithms</h5>
+					<h5 class="card-title title-font">Life Among Algorithms</h5>
 					<p class="card-text"><a class="text-white dropdown-toggle" data-toggle="collapse" href="#multiCollapse11" aria-expanded="false" aria-controls="multiCollapse11">Poster Campaign Concept</a></p>
 					<div class="collapse multi-collapse" id="multiCollapse11" style="margin-left:-30px;margin-right:-30px;">
-      					<div class="card card-body text-white bg-dark">
+      					<div class="card card-body text-dark bg-white">
       					  <p class="card-text">
 							 - Empower algorithm influencees<br>
 							 - Raise awareness of AI algorithms<br>
 							 - With quiz posters in different daily scenarios<br>
 						  </p>
-						  <a class="btn btn-dark w-100" href="content_pages/content_LifeAmongAlgorithm.html"><small>more</small></a>
+						  <a class="btn btn-light w-100" href="content_pages/content_LifeAmongAlgorithm.html"><small>MORE</small></a>
       					</div>
    					 </div>
 				</div>
 			    <div class="card-footer">
 					<small class="text-white">10-15 min Read</small>
 				</div>	
-			</div>
+				</div>
 			  <!--second card-->
               <div class="card bg-light text-dark project-card">
-				<a href="content_pages/content_Futurenome.html"><img src="resources/images/thumbnail400x400_fn.jpg" class="card-img-top" alt="Futurenome"></a>
+				<a href="content_pages/content_Futurenome.html"><img src="resources/images/thumbnail400x400_fn.jpg" class="card-img-top card-image" alt="Futurenome"></a>
 				<div class="card-body">
-					<h5 class="card-title">Futurenome (coming soon)</h5>
+					<h5 class="card-title title-font text-dark">Futurenome</h5>
 					<p class="card-text"><a class="text-dark dropdown-toggle" data-toggle="collapse" href="#multiCollapse14" aria-expanded="false" aria-controls="multiCollapse14">Product Concept</a></p>
 					<div class="collapse multi-collapse" id="multiCollapse14" style="margin-left:-30px;margin-right:-30px;">
       					<div class="card card-body text-white bg-dark">
@@ -286,21 +281,21 @@
 			  </div>	  
 		   </div>
 		   <!--second tab-->	 
-   	       <div class="tab-pane fade" id="tab02" role="tabpanel" aria-labelledby="second-tab" style="margin-top:10px;">
+   	       <div class="tab-pane fade" id="tab02" role="tabpanel" aria-labelledby="second-tab">
 			  <div class="row justify-content-center"> 
 		      <!--first card-->
-              <div class="card bg-theme text-white project-card">
-				<a href="content_pages/content_Glove.html"><img src="resources/images/thumbnail400x400_mg.jpg" class="card-img-top" alt="MetamaterialGlove"></a>
+              <div class="card bg-dark text-white project-card">
+				<a href="content_pages/content_Glove.html"><img src="resources/images/thumbnail400x400_mg.jpg" class="card-img-top card-image" alt="MetamaterialGlove"></a>
 				<div class="card-body">
-					<h5 class="card-title">Anti-vibration Glove</h5>
+					<h5 class="card-title title-font">Anti-vibration Glove</h5>
 					<p class="card-text"><a class="text-white dropdown-toggle" data-toggle="collapse" href="#multiCollapse21" aria-expanded="false" aria-controls="multiCollapse21">Product Concept</a></p>
 					<div class="collapse multi-collapse" id="multiCollapse21" style="margin-left:-30px;margin-right:-30px;">
-      					<div class="card card-body text-white bg-dark">
+      					<div class="card card-body text-dark bg-white">
       					  <p class="card-text">
 							 - Reduces vibrations from construction equipment<br>
 							 - By adopting a novel mechanical metamaterial structure<br>
 						  </p>
-						  <a class="btn btn-dark w-100" href="content_pages/content_Glove.html"><small>more</small></a>
+						  <a class="btn btn-light w-100" href="content_pages/content_Glove.html"><small>MORE</small></a>
       					</div>
    					 </div>
 				</div>
@@ -309,19 +304,19 @@
 				</div>	
 			</div>
 			  <!--second card-->
-              <div class="card bg-theme text-white project-card">
-				<a href="content_pages/content_Lento.html"><img src="resources/images/thumbnail400x400_lt.jpg" class="card-img-top" alt="Lento"></a>
+              <div class="card bg-dark text-white project-card">
+				<a href="content_pages/content_Lento.html"><img src="resources/images/thumbnail400x400_lt.jpg" class="card-img-top card-image" alt="Lento"></a>
 				<div class="card-body">
-					<h5 class="card-title">Lento <span class="badge badge-info">collab</span></h5>
+					<h5 class="card-title title-font">Lento <span class="badge badge-info">collab</span></h5>
 					<p class="card-text"><a class="text-white dropdown-toggle" data-toggle="collapse" href="#multiCollapse22" aria-expanded="false" aria-controls="multiCollapse22">Thermometer Concept</a></p>
 					<div class="collapse multi-collapse" id="multiCollapse22" style="margin-left:-30px;margin-right:-30px;">
-      					<div class="card card-body text-white bg-dark">
+      					<div class="card card-body text-dark bg-white">
       					  <p class="card-text">
 							 - Determine if the temperature and humidity is optimal<br>
 							 - Specifically designed for wooden musical instrument<br>
 							 - Adopting a novel internal stress measurement approach 
 						  </p>
-						  <a class="btn btn-dark w-100" href="content_pages/content_Lento.html"><small>more</small></a>
+						  <a class="btn btn-light w-100" href="content_pages/content_Lento.html"><small>MORE</small></a>
       					</div>
    					 </div>
 				</div>
@@ -332,21 +327,21 @@
 			  </div>	  
 		   </div>
 		   <!--thrid tab--> 
- 		   <div class="tab-pane fade" id="tab03" role="tabpanel" aria-labelledby="thrid-tab" style="margin-top:10px;">
+ 		   <div class="tab-pane fade" id="tab03" role="tabpanel" aria-labelledby="thrid-tab">
 			  <div class="row justify-content-center">
 			  <!--first card-->
-              <div class="card bg-theme text-white project-card">
-				<a href="content_pages/content_Brochure.html"><img src="resources/images/thumbnail400x400_sip.jpg" class="card-img-top" alt="Brochure"></a>
+              <div class="card bg-dark text-white project-card">
+				<a href="content_pages/content_Brochure.html"><img src="resources/images/thumbnail400x400_sip.jpg" class="card-img-top card-image" alt="Brochure"></a>
 				<div class="card-body">
-					<h5 class="card-title">Shared Industrial Platform EMU <span class="badge badge-info">collab</h5>
+					<h5 class="card-title title-font">Shared Industrial Platform EMU <span class="badge badge-info">collab</h5>
 					<p class="card-text"><a class="text-white dropdown-toggle" data-toggle="collapse" href="#multiCollapse31" aria-expanded="false" aria-controls="multiCollapse31">Brochure</a></p>
 					<div class="collapse multi-collapse" id="multiCollapse31" style="margin-left:-30px;margin-right:-30px;">
-      					<div class="card card-body text-white bg-dark">
+      					<div class="card card-body text-dark bg-white">
       					  <p class="card-text">
 							 - Introduce our client's(CRRC Corp. Limited) novel locomotive design<br>
 							 - At 2018 InnoTrans<br>
 						  </p>
-						  <a class="btn btn-dark w-100" href="content_pages/content_Brochure.html"><small>more</small></a>
+						  <a class="btn btn-light w-100" href="content_pages/content_Brochure.html"><small>MORE</small></a>
       					</div>
    					 </div>
 				</div>
@@ -357,13 +352,13 @@
 			   </div>	  
 		   </div>
 		   <!--fourth tab--> 
- 		   <div class="tab-pane fade" id="tab04" role="tabpanel" aria-labelledby="fourth-tab" style="margin-top:10px;">
+ 		   <div class="tab-pane fade" id="tab04" role="tabpanel" aria-labelledby="fourth-tab">
 			   <div class="row justify-content-center">
 				<!--first card-->
 				<div class="card bg-light text-dark project-card">
-				<a href="content_pages/content_VRLivingPillar.html"><img src="resources/images/thumbnail400x400_lp.jpg" class="card-img-top" alt="VR LivingPillar"></a>
+				<a href="content_pages/content_VRLivingPillar.html"><img src="resources/images/thumbnail400x400_lp.jpg" class="card-img-top card-image" alt="VR LivingPillar"></a>
 				<div class="card-body">
-					<h5 class="card-title">VR LivingPillar</h5>
+					<h5 class="card-title title-font text-dark">VR LivingPillar</h5>
 					<p class="card-text"><a class="text-dark dropdown-toggle" data-toggle="collapse" href="#multiCollapse41" aria-expanded="false" aria-controls="multiCollapse41">Virtual Reality Exhibition</a></p>
 					<div class="collapse multi-collapse" id="multiCollapse41" style="margin-left:-30px;margin-right:-30px;">
       					<div class="card card-body text-white bg-dark">
@@ -372,7 +367,7 @@
 							 - Showcasing the design under four weather conditions and seasons<br>
 							 - With some interactivity to move and interact with objects
 						  </p>
-						  <a class="btn btn-dark w-100" href="content_pages/content_VRLivingPillar.html"><small>more</small></a>
+						  <a class="btn btn-dark w-100" href="content_pages/content_VRLivingPillar.html"><small>MORE</small></a>
       					</div>
    					 </div>
 				</div>
@@ -382,9 +377,9 @@
 			</div>
 				<!--second card-->
 				<div class="card bg-light text-dark project-card">
-				<a href="content_pages/content_Painsonality.html"><img src="resources/images/thumbnail400x400_pf.jpg" class="card-img-top" alt="Painsonality"></a>
+				<a href="content_pages/content_Painsonality.html"><img src="resources/images/thumbnail400x400_pf.jpg" class="card-img-top card-image" alt="Painsonality"></a>
 				<div class="card-body">
-					<h5 class="card-title">Painsonality Forest <span class="badge badge-info">collab</span></h5>
+					<h5 class="card-title title-font text-dark">Painsonality Forest <span class="badge badge-info">collab</span></h5>
 					<p class="card-text"><a class="text-dark dropdown-toggle" data-toggle="collapse" href="#multiCollapse42" aria-expanded="false" aria-controls="multiCollapse42">Web-based Programme Demo</a></p>
 					<div class="collapse multi-collapse" id="multiCollapse42" style="margin-left:-30px;margin-right:-30px;">
       					<div class="card card-body text-white bg-dark">
@@ -392,7 +387,7 @@
 							 - Establish and connect chronic pain communities<br>
 							 - An interactive game-like social platform<br>
 						  </p>
-						  <a class="btn btn-dark w-100" href="content_pages/content_Painsonality.html"><small>more</small></a>
+						  <a class="btn btn-dark w-100" href="content_pages/content_Painsonality.html"><small>MORE</small></a>
       					</div>
    					 </div>
 				</div>
@@ -402,9 +397,9 @@
 			</div>   
 				<!--third card-->
 				<div class="card bg-light text-dark project-card">
-				<a href="content_pages/content_VREcoRotomoulding.html"><img src="resources/images/thumbnail400x400_er.jpg" class="card-img-top" alt="VR Ecorotomoulding"></a>
+				<a href="content_pages/content_VREcoRotomoulding.html"><img src="resources/images/thumbnail400x400_er.jpg" class="card-img-top card-image" alt="VR Ecorotomoulding"></a>
 				<div class="card-body">
-					<h5 class="card-title">VR EcoRotomoulding (coming soon)</h5>
+					<h5 class="card-title title-font text-dark">VR EcoRotomoulding</h5>
 					<p class="card-text"><a class="text-dark dropdown-toggle" data-toggle="collapse" href="#multiCollapse43" aria-expanded="false" aria-controls="multiCollapse43">Virtual Reality Exhibition</a></p>
 					<div class="collapse multi-collapse" id="multiCollapse43" style="margin-left:-30px;margin-right:-30px;">
       					<div class="card card-body text-white bg-dark">
@@ -412,7 +407,7 @@
 							 - Showcase a novel rotomoulding machine concept<br>
 							 - With carefully designed route providing an exhibition-like narrative<br>
 						  </p>
-						  <a class="btn btn-dark w-100" href="content_pages/content_VREcoRotomoulding.html"><small>more</small></a>
+						  <a class="btn btn-dark w-100" href="content_pages/content_VREcoRotomoulding.html"><small>MORE</small></a>
       					</div>
    					 </div>
 				</div>
@@ -422,9 +417,9 @@
 			</div>
 				<!--fourth card-->
 				<div class="card bg-light text-dark project-card">
-				<a href="content_pages/content_ARAnthropometry.html"><img src="resources/images/thumbnail400x400_ap.jpg" class="card-img-top" alt="AR Anthropometry"></a>
+				<a href="content_pages/content_ARAnthropometry.html"><img src="resources/images/thumbnail400x400_ap.jpg" class="card-img-top card-image" alt="AR Anthropometry"></a>
 				<div class="card-body">
-					<h5 class="card-title">AR Anthropometry (coming soon)</h5>
+					<h5 class="card-title title-font text-dark">AR Anthropometry</h5>
 					<p class="card-text"><a class="text-dark dropdown-toggle" data-toggle="collapse" href="#multiCollapse44" aria-expanded="false" aria-controls="multiCollapse44">Augmented Reality Application</a></p>
 					<div class="collapse multi-collapse" id="multiCollapse44" style="margin-left:-30px;margin-right:-30px;">
       					<div class="card card-body text-white bg-dark">
@@ -433,7 +428,7 @@
 							 - Help interior designers and furniture designers understand human scale<br>
 							 - Different age/sex groups available with reference to anthropometry
 						  </p>
-						  <a class="btn btn-dark w-100" href="content_pages/content_ARAnthropometry.html"><small>more</small></a>
+						  <a class="btn btn-dark w-100" href="content_pages/content_ARAnthropometry.html"><small>MORE</small></a>
       					</div>
    					 </div>
 				</div>
@@ -444,32 +439,73 @@
 			   </div>	   
 		   </div>   
 		  </div>
-		  	  
 		  <br><br>
         </div>
       </section>
-	  
+	  <hr>
 	  <!--about me-->
       <section>
 		<!--Title-->  
 	    <div class="row">
-	   <div class="col-12 text-center bg-light">
+	   <div class="col-12 text-center title-ribbon">
 		   <br>
-		   <h1>ABOUT ME</h1>
+		   <h1 class="title-font text-theme">ABOUT ME</h1>
 		   <br>
 	   </div>
-	  </div>
 	    <br>
+		  
         <div class="container" id="about-me">
         <div class="row">
-		  <div class="col-12 col-md-5">
-			<div class="text-center"><img class="w-50" src="resources/images/portrait_aboutMe.png"></div>  
+		  <div class="col-12 col-md-5 d-flex align-items-center">
+			<div class="text-center"><img class="w-50 about-me-image" src="resources/images/portrait_aboutMe.png"></div>  
 		  </div>	  
           <div class="col-12 col-md-7 text-center" style="background-color:rgba(255,255,255,0.75)">
-            <p class="text-justify">My speciality is sustainable design, while I am also a well-trained product designer and graphic designer. I have made a brochure that has effectively helped our client company communicate with fellow corporations and gain reputations in the industry.<br/><br/> I am passionate about connecting people with their natural inner selves through design. I am often fascinated by how much internal power we possess.<br/><br/> Having been in multicultural environments (China and the UK), I have developed my knowledge, empathy, communication and critical thinking skills. <br/><br/>Through professional studies, I obtained a wide range of creative skills, including ethnographic research, graphics, video production, rapid prototyping, interactive programme, VR and AR applications etc. These skills organically contribute to my design works.</p>
+			<ul class="nav nav-tabs justify-content-end">
+ 				 <li class="nav-item">
+  					    <a class="nav-link active" id="intro-tab" data-toggle="tab" href="#intro" role="tab" aria-controls="intro" aria-selected="true">Introduction</a>
+ 				 </li>
+ 				 <li class="nav-item">
+   					    <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="true">Work Experience</a>
+  				 </li>
+  				 <li class="nav-item">
+    					<a class="nav-link" id="education-tab" data-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="true">Education</a>
+ 				 </li>
+  				 <li class="nav-item">
+                        <a class="nav-link" id="skill-tab" data-toggle="tab" href="#skill" role="tab" aria-controls="skill" aria-selected="true">Skills</a>
+  				 </li>
+			</ul>
+			<div class="tab-content about-me-tab">
+  				<div class="tab-pane fade show active" id="intro" role="tabpanel" aria-labelledby="intro-tab">
+					<p class="text-justify">My speciality is sustainable design, while I am also a well-trained product designer and graphic designer. I have made a brochure that has effectively helped our client company communicate with fellow corporations and gain reputations in the industry.<br/><br/> I am passionate about connecting people with their natural inner selves through design. I am often fascinated by how much internal power we possess.<br/><br/> Having been in multicultural environments (China and the UK), I have developed my knowledge, empathy, communication and critical thinking skills. <br/><br/>Through professional studies, I obtained a wide range of creative skills, including ethnographic research, graphics, video production, rapid prototyping, interactive programme, VR and AR applications etc. These skills organically contribute to my design works.</p>
+				</div>
+  				<div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+					<p class="text-justify"><strong>Graphic Designer of the Department of Design, Xi’an Jiaotong Liverpool University (Part time)</strong><br><small><em>March 2018 - September 2018</em></small></p>
+					<p class="text-justify">As the leading graphic designer in our team, I was responsible for creating a promotional brochure advertising a novel design by CRRC Corporation Limited at 2018 Innotrans in Berlin. The brochure visually and effec-tively contributed to the communications among CRRC and other international groups, photos from which were also used by multiple editorial sites.</p>
+					<hr>
+					<p class="text-justify"><strong>Internship Product Designer of Hangzhou Tongda Control System Co. Ltd</strong><br><small><em>August 2018</em></small></p>
+					<p class="text-justify">My primary role was to propose a novel aesthetic design concept of an elevator call-box aligning to current market needs via 3D parametric models and 2D photo-realistic renderings. The final proposal became a valued concept acknowledged by the head supervisor.</p>
+				</div>
+  				<div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+					<p class="text-justify">2021 <strong>MA Sustainable Design</strong>, Kingston School of Art, United Kingdom</p>
+					<hr>
+					<p class="text-justify">2020 <strong>BEng Industrial Design</strong>, University of Liverpool, United Kingdom</p>
+				</div>
+ 				 <div class="tab-pane fade" id="skill" role="tabpanel" aria-labelledby="skill-tab">
+					<p class="text-justify"><strong>Ethnographic Research</strong> | Interview, Questionnaire, Literature</p>
+					<hr>
+					<p class="text-justify"><strong>Graphics, Illustration, Visual Aid</strong> | Adobe Photoshop, Illustrator, InDesign</p>
+					<hr>
+					<p class="text-justify"><strong>CAD, VR and AR Appication</strong> | Creo Parametric, Autodesk 3ds Max, Unity</p>
+					<hr>
+					<p class="text-justify"><strong>Coding, Prototyping</strong> | C#, Python, Html, CSS, C++(Arduino)</p>
+					<hr>
+					<p class="text-justify"><strong>Promotional Videos and Films</strong> | Adobe Premiere Pro, After Effects</p>
+					<hr>
+				</div>
+			</div>
           </div>
         </div>
-      </div>
+        </div>
       </section>
 	  <br> 
 	

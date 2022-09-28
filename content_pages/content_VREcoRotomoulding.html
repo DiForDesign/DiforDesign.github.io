@@ -122,12 +122,11 @@
             About
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			  <a class="dropdown-item" href="../index.html">More About Me</a>
-              <a class="dropdown-item" data-toggle="modal" href="#eModal">Hobby Works(Coming Soon)</a>
-			  <a class="dropdown-item" href="#contact-info">Contact Info</a>				
+			  <a class="dropdown-item" href="../index.html#about-me">More About Me</a>
+			  <a class="dropdown-item" href="../index.html#contact-info">Contact Info</a>				
               <div class="dropdown-divider"></div>
-			  <a class="dropdown-item" href="resources/files/CV_Di.pdf" target="_blank">Download CV <span class="badge badge-secondary">.PDF</span></a>
-			  <a class="dropdown-item" href="resources/files/Portfolio_Di.pdf" target="_blank">Download Portfolio <span class="badge badge-secondary">.PDF</span></a>
+			  <a class="dropdown-item" href="../resources/files/CV_Di.pdf" target="_blank">Download CV <span class="badge badge-secondary">.PDF</span></a>
+			  <a class="dropdown-item" href="../resources/files/Portfolio_Di.pdf" target="_blank">Download Portfolio <span class="badge badge-secondary">.PDF</span></a>
             </div>
 			  
           </li>
@@ -139,6 +138,31 @@
         </form>-->
       </div>
     </nav>
+	</div>	
+	
+	<!--side navbar-->
+	<div class="container">
+	<div class="sideNav">
+		<div class="btn-group dropup">
+ 		 	<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+ 			 <div class="dropdown-menu bg-light drop-shadowed">
+  			    <nav id="navbar-side" class="navbar navbar-light text-dark">
+  					<nav class="nav nav-pills flex-column">
+  					     <h5 class="title-font text-center text-dark"><strong>CONTENTS</strong></h5>
+						 <div class="dropdown-divider"></div>
+						 <!-- InstanceBeginEditable name="SideNav" -->  
+   						 <a class="nav-link cursor-pointer" onclick="scrollToElement('section1')">· Overview</a>
+   		    			 <a class="nav-link cursor-pointer" onclick="scrollToElement('section2')">· Rooms</a>
+  		     			 <a class="nav-link cursor-pointer" onclick="scrollToElement('section3')">· Video Tour</a>
+						 <!-- InstanceEndEditable -->
+						 <div class="dropdown-divider"></div>
+						 <div class="text-center"><a class="nav-link cursor-pointer" onclick="scrollToElement('topNav')">Go to Top</a></div>
+ 					</nav>
+				</nav>
+ 			 </div>
+		</div>	
+	
+	</div>
 	</div>
 	  
 	<!-- Main content -->
@@ -168,7 +192,7 @@
 		
 		<!-- main paragraph -->  
 		<div class="col-12" style="padding-left: 5%; padding-right: 5%; padding-bottom: 5%">
-			
+		    <hr id="section1">
 			<h2><em>Overview</em></h2><br>
 			<div class="row" style="padding-bottom: 2%">
 				<div class="col-12 col-lg-6 col-md-9">
@@ -214,7 +238,7 @@
 				 </div>
 			</div>
 			<br>
-			<hr>
+			<hr id="section2">
 			<h2><em>Rooms</em></h2><br>
 			<div class="row" style="padding-bottom:2%;">
 				<p class="text-justify">The whole scene consists of three rooms.</p>
@@ -247,7 +271,7 @@
 				</div>
 			</div>
 			<br>
-			<hr>
+			<hr id="section3">
 			<h2><em>Video Tour</em></h2><br>
 			<div class="row" style="padding-bottom: 2%">
 				<div class="col-12">
@@ -293,5 +317,6 @@
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap-4.4.1.js"></script>
 	 <!-- InstanceEndEditable -->
+	<script src="../js/custom.js"></script>
   </body>
 <!-- InstanceEnd --></html>

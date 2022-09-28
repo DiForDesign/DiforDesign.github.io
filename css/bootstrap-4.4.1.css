@@ -1,4 +1,4 @@
-/*!
+<strong></strong>/*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
@@ -158,13 +158,13 @@ sup {
 }
 
 a {
-  color: #659E57;
+  color: #4a4896;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #307839;
+  color: #efd954;
   text-decoration: underline;
 }
 
@@ -3434,15 +3434,18 @@ input[type="button"].btn-block {
 }
 
 .dropdown-item:hover, .dropdown-item:focus {
-  color: #16181b;
+  /*color: #16181b;*/
+  color:#fff;
   text-decoration: none;
-  background-color: #f8f9fa;
+  /*background-color: #f8f9fa;*/
+  background-color:#8470e5;
 }
 
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #007bff;
+  /*background-color: #007bff;*/
+  background-color:#312a68;
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
@@ -4289,16 +4292,20 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-item {
   margin-bottom: -1px;
+  padding-right:2px;
 }
 
 .nav-tabs .nav-link {
   border: 1px solid transparent;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
+  color: #FFFFFF;
+  background-color: #8470e5;
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   border-color: #e9ecef #e9ecef #dee2e6;
+  background-color:#312a68;
 }
 
 .nav-tabs .nav-link.disabled {
