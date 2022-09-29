@@ -84,6 +84,31 @@
 	background-color:#fff;
 }
 
+.expandModal {
+	width: 900px;
+}
+
 .tab-custom {
+}
+
+.jumbotron-with-bg {
+	background-image: url("../resources/images/jumbotron-bg-sustainablity.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size:auto;
+}
+
+.jumbotron-bg-product {
+	background-image: url("../resources/images/jumbotron-bg-product.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size:auto;
+}
+
+.jumbotron-bg-programme {
+	background-image: url("../resources/images/jumbotron-bg-programme.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size:auto;
 }
 	

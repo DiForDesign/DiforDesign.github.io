@@ -55,6 +55,26 @@
 	  </div>
 	</div>  
 	  
+	<!-- Modal:Expand image: id imageExpansion -->
+    <div class="modal fade" id="imageExpansion" tabindex="-1" role="dialog" aria-labelledby="imageExpansionLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-xl" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="imageExpansionLabel">Image</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+ 	     </div>
+ 	     <div class="modal-body text-center">
+			 <p id="test-output"></p>
+			 <div id="expandModal"><img id="expandedImage" src=".." width="100%"></div>
+ 	     </div>
+ 	     <div class="modal-footer">
+	      </div>
+	    </div>
+	  </div>
+	</div>   
+	  
 	<!--top navbar-->  
 	<div class="container">  
     <nav id="topNav" class="navbar navbar-expand-lg navbar-light bg-light corner-rounded" style="margin-left:-16px;margin-right:-16px">
@@ -152,6 +172,13 @@
 						 <!-- InstanceBeginEditable name="SideNav" -->  
    						 <a class="nav-link cursor-pointer" onclick="scrollToElement('section1')">· Overview</a>
    		    			 <a class="nav-link cursor-pointer" onclick="scrollToElement('section2')">· Features</a>
+						 <nav class="nav nav-pills flex-column" style="margin-top:0px; margin-bottom:0px; margin-left:20px;">
+							<a class="nav-link cursor-pointer" onclick="scrollToElement('section2-1')"><em>The Hub</em></a>
+							<a class="nav-link cursor-pointer" onclick="scrollToElement('section2-2')"><em>Spring Scene</em></a>
+							<a class="nav-link cursor-pointer" onclick="scrollToElement('section2-3')"><em>Autumn Scene</em></a>
+							<a class="nav-link cursor-pointer" onclick="scrollToElement('section2-4')"><em>Night Scene</em></a>
+							<a class="nav-link cursor-pointer" onclick="scrollToElement('section2-5')"><em>Overcast Scene</em></a>
+						 </nav>
   		     			 <a class="nav-link cursor-pointer" onclick="scrollToElement('section3')">· Video Tour</a>
 						 <!-- InstanceEndEditable -->
 						 <div class="dropdown-divider"></div>
@@ -178,19 +205,19 @@
  		        </ol>
 			  </nav>  
 			<!-- title block -->
-         	 <div class="jumbotron">
-             <h1 class="text-center" style="color: #2B451C;"><strong>VR Scene: Living Pillar Lampposts</strong></h1>
-            <p class="text-center"><em>A virtual reality programme displaying a "living pillar" lamppost design in different seasons and weather condition.</em></p><br>
+         	 <div class="jumbotron jumbotron-bg-programme">
+             <h1 class="text-center title-font"><strong>VR Scene: Living Pillar Lampposts</strong></h1>
+            <p class="text-center text-white"><em>A virtual reality programme displaying a "living pillar" lamppost design in different seasons and weather condition.</em></p><br>
 			  <div class="row">
-				  <div class="col-12 text-center">
-					<h6>| Individual Project by Di Ba, 2020 | <em>5 min</em> reading time + <em>5 min</em> video</h6>
+				  <div class="col-12 text-center text-white">
+					<h6><small> Individual Project by Di Ba, 2020 | <em>5 min</em> reading time + <em>5 min</em> video</small></h6>
 				  </div>
 			  </div>
           </div>
         </div>
 		
 		<!-- main paragraph -->  
-		<div class="col-12" style="padding-left: 5%; padding-right: 5%; padding-bottom: 5%">
+		<div style="padding-left: 5%; padding-right: 5%; padding-bottom: 5%">
 			<hr id="section1">
 			<h2><em>Overview</em></h2><br>
 			<div class="row" style="padding-bottom: 2%">
@@ -231,104 +258,59 @@
 					<p class="text-justify">I created five scenes to showcase how the design proposal can make living pillars more visually appealing in different seasons and weather conditions.<br><br>
 					</p>
 				</div>
-				<div class="col-12 col-lg-12 col-md-12">
-					<div class="accordion" id="accordion02">
-						<!-- #1 collapse -->
-  						<div class="card">
-   							 <div class="card-header" id="heading2One">
-      							<h2 class="mb-0">
-       								 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2One" aria-expanded="true" aria-controls="collapse2One">
-      								    Scene #1: <strong><em>Hub</em></strong>
-       								 </button>
-     							 </h2>
-   							 </div>
-
-  							  <div id="collapse2One" class="collapse" aria-labelledby="heading2One" data-parent="#accordion02">
-     							 <div class="card-body">
-       								 A hub scene was created to aid the narratives and connect different locations. The hub consists of four connecting rooms. Here is also where our visitors (players) spawn.  <br><br>
-									 
-									 Visitors spawn in the main room, where there are basic instructions and a model of the new design concept. Visitors can teleport across the room using controllers.<br><br>
-									 
-									 The other four rooms, walled with glass, are gates to other scenes with different weather and season settings. You can see more details in the following video tour.
-									 <br>
-									 <img src="../resources/images/cVRLP_01.JPG" alt="hub" width="100%"><br><br>
-									 <img src="../resources/images/cVRLP_02.JPG" alt="hub" width="100%"><br><br>
-     							 </div>
-   							 </div>
- 						 </div>
-						<!-- #2 collapse -->
-  						<div class="card">
-   							 <div class="card-header" id="heading2Two">
-      							<h2 class="mb-0">
-       								 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2Two" aria-expanded="true" aria-controls="collapse2Two">
-      								    Scene #2: <strong><em>Spring</em></strong>
-       								 </button>
-     							 </h2>
-   							 </div>
-
-  							  <div id="collapse2Two" class="collapse" aria-labelledby="heading2Two" data-parent="#accordion02">
-     							 <div class="card-body">
-       								 This scene shows how the design can visually fit the city block in Spring.<br><br>
-									 <img src="../resources/images/cVRLP_03.JPG" width="100%" alt="spring">
-     							 </div>
-   							 </div>
- 						 </div>
-						<!-- #3 collapse -->
-  						<div class="card">
-   							 <div class="card-header" id="heading2Three">
-      							<h2 class="mb-0">
-       								 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2Three" aria-expanded="true" aria-controls="collapse2Three">
-      								    Scene #3: <strong><em>Autumn</em></strong>
-       								 </button>
-     							 </h2>
-   							 </div>
-
-  							  <div id="collapse2Three" class="collapse" aria-labelledby="heading2Three" data-parent="#accordion02">
-     							 <div class="card-body">
-       								 This scene shows how the design can visually fit the city block in Autumn.<br><br>
-									 <img src="../resources/images/cVRLP_04.JPG" width="100%" alt="autumn">
-     							 </div>
-   							 </div>
- 						 </div>
-						<!-- #4 collapse -->
-  						<div class="card">
-   							 <div class="card-header" id="heading2Four">
-      							<h2 class="mb-0">
-       								 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2Four" aria-expanded="true" aria-controls="collapse2Four">
-      								    Scene #4: <strong><em>Night</em></strong>
-       								 </button>
-     							 </h2>
-   							 </div>
-
-  							  <div id="collapse2Four" class="collapse" aria-labelledby="heading2Four" data-parent="#accordion02">
-     							 <div class="card-body">
-       								 This scene shows how the design can visually fit the city block at night.<br><br>
-									 <img src="../resources/images/cVRLP_06.JPG" width="100%" alt="night">
-     							 </div>
-   							 </div>
- 						 </div>
-						<!-- #5 collapse -->
-  						<div class="card">
-   							 <div class="card-header" id="heading2Five">
-      							<h2 class="mb-0">
-       								 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2Five" aria-expanded="true" aria-controls="collapse2Five">
-      								    Scene #5: <strong><em>Overcast</em></strong>
-       								 </button>
-     							 </h2>
-   							 </div>
-
-  							  <div id="collapse2Five" class="collapse" aria-labelledby="heading2Five" data-parent="#accordion02">
-     							 <div class="card-body">
-       								 This scene shows how the design can visually fit the city block in overcast weather.<br><br>
-									 <img src="../resources/images/cVRLP_05.JPG" width="100%" alt="overcast">
-     							 </div>
-   							 </div>
- 						 </div>
-					 </div><br>
-				</div>
+			</div>
+			<hr>
+			<div id="section2-1" class="row">
+					<div class="col-12 col-md-6 d-flex align-items-center">
+						<p class="text-justify w-75"><strong>Scene #1: The Hub</strong><br><br>A hub scene was created to aid the narratives and connect different locations. The hub consists of four connecting rooms. Here is also where our visitors (players) spawn.<br><br>Visitors spawn in the main room, where there are basic instructions and a model of the new design concept. Visitors can teleport across the room using controllers.<br><br>The other four rooms, walled with glass, are gates to other scenes with different weather and season settings. You can see more details in the following video tour.</p>
+						
+					</div>
+					<div class="col-12 col-md-6">
+						<img class="cursor-pointer w-100" onclick="expandImage(this.src)" src="../resources/images/cVRLP_01.JPG" alt="hub"><br><br>
+						<img class="cursor-pointer w-100" onclick="expandImage(this.src)" src="../resources/images/cVRLP_02.JPG" alt="hub">
+					</div>
+			</div>
+			<hr>
+			<div id="section2-2" class="row">
+				<div class="col-12 col-md-6 d-flex align-items-center">
+						<p class="text-justify w-75"><strong>Scene #2: Spring</strong><br>This scene shows how the design can visually fit the city block in Spring.</p>
+						
+					</div>
+					<div class="col-12 col-md-6">
+						<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cVRLP_03.JPG" width="100%" alt="spring">
+					</div>
+			</div>
+			<hr>
+			<div id="section2-3" class="row">
+				<div class="col-12 col-md-6 d-flex align-items-center">
+						<p class="text-justify w-75"><strong>Scene #3: Autumn</strong><br>This scene shows how the design can visually fit the city block in Autumn.</p>
+						
+					</div>
+					<div class="col-12 col-md-6">
+						<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cVRLP_04.JPG" width="100%" alt="autumn">
+					</div>
+			</div>
+			<hr>
+			<div id="section2-4" class="row">
+				<div class="col-12 col-md-6 d-flex align-items-center">
+						<p class="text-justify w-75"><strong>Scene #4: Night</strong><br>This scene shows how the design can visually fit the city block at night.</p>
+						
+					</div>
+					<div class="col-12 col-md-6">
+						<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cVRLP_06.JPG" width="100%" alt="night">
+					</div>
+			</div>
+			<hr>
+			<div id="section2-5" class="row">
+				<div class="col-12 col-md-6 d-flex align-items-center">
+						<p class="text-justify w-75"><strong>Scene #5: Overcast</strong><br>This scene shows how the design can visually fit the city block in overcast weather.</p>
+						
+					</div>
+					<div class="col-12 col-md-6">
+						<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cVRLP_05.JPG" width="100%" alt="overcast">
+					</div>
 			</div>
 			<br><br>
-			
 			<hr id="section3">
 			<div id="video-tour">
 			<h2><em>Video Tour</em></h2><br>
@@ -338,9 +320,6 @@
 				</div>
 			</div>
 			</div>
-			<br><br><br>
-			
-			
 		</div>	 
 		  
       </div>
@@ -351,11 +330,11 @@
 	<div class="container">  
 	<div class="row" style="margin-top:3%; margin-bottom:1%;padding-top:2%;padding-bottom: 2%; background-color: rgba(35,35,35,0.9)">
 			   <div class="col-12">
-				<h5 class="text-center" style="color:#A2A2A2">- THE END -</h5>
+				<h5 class="text-center title-font">THE END</h5>
 			   </div>
 			   <div class="col-12 text-center">
 				 <!--a href="#" class="btn btn-primary">Prev.</a-->
-				 <a href="#topNav" class="btn btn-primary">Go to Top</a>
+				 <a href="#topNav" class="btn btn-primary" style="background-color: rgba(113,54,123,1.00);">Go to Top</a>
 				 <a href="#eModal" data-toggle="modal" class="btn btn-secondary">Next Random Project</a>
 				 <!--a href="#" class="btn btn-primary">Next</a-->
 			   </div>

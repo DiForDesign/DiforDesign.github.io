@@ -55,6 +55,26 @@
 	  </div>
 	</div>  
 	  
+	<!-- Modal:Expand image: id imageExpansion -->
+    <div class="modal fade" id="imageExpansion" tabindex="-1" role="dialog" aria-labelledby="imageExpansionLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-xl" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="imageExpansionLabel">Image</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+ 	     </div>
+ 	     <div class="modal-body text-center">
+			 <p id="test-output"></p>
+			 <div id="expandModal"><img id="expandedImage" src=".." width="100%"></div>
+ 	     </div>
+ 	     <div class="modal-footer">
+	      </div>
+	    </div>
+	  </div>
+	</div>   
+	  
 	<!--top navbar-->  
 	<div class="container">  
     <nav id="topNav" class="navbar navbar-expand-lg navbar-light bg-light corner-rounded" style="margin-left:-16px;margin-right:-16px">
@@ -179,12 +199,12 @@
  		        </ol>
 			  </nav>  
 			<!-- title block -->
-         	 <div class="jumbotron">
-             <h1 class="text-center" style="color: #36638E;"><strong>AR Anthropometry</strong></h1>
-            <p class="text-center"><em>An AR application aiding interior and furniture design</em></p><br>
+         	 <div class="jumbotron jumbotron-bg-programme">
+             <h1 class="text-center title-font"><strong>AR Anthropometry</strong></h1>
+            <p class="text-center text-white"><em>An AR application aiding interior and furniture design</em></p><br>
 			  <div class="row">
-				  <div class="col-12 text-center">
-					<h6>| Individual Project by Di Ba, 2020 | <em>5 min</em> reading time</h6>
+				  <div class="col-12 text-center text-white">
+					<h6><small> Individual Project by Di Ba, 2020 | <em>5 min</em> reading + <em>5 min</em> video</small></h6>
 				  </div>
 			  </div>
           </div>
@@ -199,7 +219,7 @@
 					<p class="text-justify">The current AR application projects virtual human models onto the physical world, aiming to help interior designers, furniture designers and design students understand human scales and their relationship with the surrounding environment. The human models were made regarding Henry Dreyfuss Associates’ study ‘The Measure of Man And Woman’ (1993). The study significantly influenced the development of ergonomics in design disciplines.</p>
 				</div>
 				<div class="col-12 col-lg-6 col-md-9">
-					<img src="../resources/images/cAA_01.JPG" width="100%" alt="anthropometry">
+					<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cAA_01.JPG" width="100%" alt="anthropometry">
 					<p>Henry Dreyfuss Associates ‘The Measure of Man And Woman’ (1993)</p>
 				 </div>
 			</div>
@@ -211,7 +231,7 @@
 					<p class="text-justify">Three groups of human models were made according to different age/sex: the adult male, adult female and children. According to the statistics, different body sizes and gesture models were made in each group.</p>
 				</div>
 				<div class="col-12 col-lg-6 col-md-9">
-					<img src="../resources/images/cAA_02.JPG" width="100%" alt="humanScaleModel">
+					<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cAA_02.JPG" width="100%" alt="humanScaleModel">
 				</div>
 			</div>
 			<br><br>
@@ -229,7 +249,7 @@
 				<div class="col-12">
 				<p><a href="../resources/files/AnthropometricsAR.apk" class="btn btn-info">Installation Package (Android) <span class="badge badge-light">.APK</span></a></p>
 				
-				<p><a href="../resources/files/Portfolio_Di.pdf" class="btn btn-info" target="_blank">Tracking Mark <span class="badge badge-light">.PDF</span></a></p>
+				<p><a href="../resources/files/TrackingMark.jpg" class="btn btn-info" target="_blank">Tracking Mark <span class="badge badge-light">.JPG</span></a></p>
 				</div>
 			</div>
 			</div>
@@ -239,18 +259,17 @@
 		</div>	 
 		  
       </div>
-    </div>
     <!-- InstanceEndEditable -->
 	  
     <!-- Article footer -->
 	<div class="container">  
 	<div class="row" style="margin-top:3%; margin-bottom:1%;padding-top:2%;padding-bottom: 2%; background-color: rgba(35,35,35,0.9)">
 			   <div class="col-12">
-				<h5 class="text-center" style="color:#A2A2A2">- THE END -</h5>
+				<h5 class="text-center title-font">THE END</h5>
 			   </div>
 			   <div class="col-12 text-center">
 				 <!--a href="#" class="btn btn-primary">Prev.</a-->
-				 <a href="#topNav" class="btn btn-primary">Go to Top</a>
+				 <a href="#topNav" class="btn btn-primary" style="background-color: rgba(113,54,123,1.00);">Go to Top</a>
 				 <a href="#eModal" data-toggle="modal" class="btn btn-secondary">Next Random Project</a>
 				 <!--a href="#" class="btn btn-primary">Next</a-->
 			   </div>

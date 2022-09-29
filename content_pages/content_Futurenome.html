@@ -55,6 +55,26 @@
 	  </div>
 	</div>  
 	  
+	<!-- Modal:Expand image: id imageExpansion -->
+    <div class="modal fade" id="imageExpansion" tabindex="-1" role="dialog" aria-labelledby="imageExpansionLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-xl" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="imageExpansionLabel">Image</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+ 	     </div>
+ 	     <div class="modal-body text-center">
+			 <p id="test-output"></p>
+			 <div id="expandModal"><img id="expandedImage" src=".." width="100%"></div>
+ 	     </div>
+ 	     <div class="modal-footer">
+	      </div>
+	    </div>
+	  </div>
+	</div>   
+	  
 	<!--top navbar-->  
 	<div class="container">  
     <nav id="topNav" class="navbar navbar-expand-lg navbar-light bg-light corner-rounded" style="margin-left:-16px;margin-right:-16px">
@@ -178,12 +198,12 @@
  		        </ol>
 			  </nav>  
 			<!-- title block -->
-         	 <div class="jumbotron">
-             <h1 class="text-center" style="color: #36638E;"><strong>Futurenome</strong></h1>
-            <p class="text-center"><em>A product concept establishing meaningful and satisfying retirement life</em></p><br>
+         	 <div class="jumbotron jumbotron-with-bg">
+             <h1 class="text-center text-white"><strong>Futurenome</strong></h1>
+            <p class="text-center text-white"><em>A product concept establishing meaningful and satisfying retirement life</em></p><br>
 			  <div class="row">
-				  <div class="col-12 text-center">
-					<h6>| Individual Project by Di Ba, 2021 | <em>5 min</em> reading time</h6>
+				  <div class="col-12 text-center text-white">
+					<h6><small> Individual Project by Di Ba, 2021 | <em>5 min</em> reading time</small></h6>
 				  </div>
 			  </div>
           </div>
@@ -191,6 +211,7 @@
 		
 		<!-- main paragraph -->  
 		<div class="col-12" style="padding-left: 5%; padding-right: 5%; padding-bottom: 5%">
+			<br><br>
 			<h3 class="text-center"><em>How might we establish meaningful lifestyles after retirement?</em></h3><br><br>
 			<hr id="section1">
 			
@@ -200,7 +221,7 @@
 					<p class="text-justify">Getting used to retirement is challenging. One will likely experience a sequence of emotional stages after retirement. During the period, finance, family, health and socioeconomic positions are making the challenge greater. </p>
 				</div>
 				<div class="col-12 col-lg-6 col-md-9">
-					<div class="text-center"><img class="w-50" src="../resources/images/cFN_01.jpeg" alt="retirement-life"></div>
+					<div class="text-center"><img class="cursor-pointer w-50" onclick="expandImage(this.src)" src="../resources/images/cFN_01.jpeg" alt="retirement-life"></div>
 				 </div>
 			</div>
 			<br><br>
@@ -241,7 +262,7 @@
 				   <p class="text-justify">It can be hard to create a plan from scratch.<br><br>Therefore, I created a set of customized tarot decks as an aid in making plans. By using the tarot deck, users can reflect on their own needs and values, which are crucial to their life afterwards.</p>
 			   </div>
 			   <div class="col-12 col-lg-6 col-md-9 text-center">
-				   <img class="w-50" src="../resources/images/cFN_02.jpg" alt="APP">
+				   <img class="cursor-pointer w-50" onclick="expandImage(this.src)" src="../resources/images/cFN_02.jpg" alt="APP">
 			   </div>	
 			</div>
 			
@@ -252,7 +273,7 @@
 				   <p class="text-justify">Creating a physical habit helps establish life structures.<br><br>The device is a transformable lamp with only a pull switch. Every time the users start their planned routine, they need to pull the switch. The folded lamp structure will open up while the data is uploaded to the app in the background.</p>
 			   </div>
 			   <div class="col-12 col-lg-6 col-md-9 text-center">
-				   <img class="w-100" src="../resources/images/cFN_03.jpg" alt="Device">
+				   <img class="cursor-pointer w-100" onclick="expandImage(this.src)" src="../resources/images/cFN_03.jpg" alt="Device">
 			   </div>	
 			</div>
 			
@@ -346,11 +367,11 @@
 	<div class="container">  
 	<div class="row" style="margin-top:3%; margin-bottom:1%;padding-top:2%;padding-bottom: 2%; background-color: rgba(35,35,35,0.9)">
 			   <div class="col-12">
-				<h5 class="text-center" style="color:#A2A2A2">- THE END -</h5>
+				<h5 class="text-center title-font">THE END</h5>
 			   </div>
 			   <div class="col-12 text-center">
 				 <!--a href="#" class="btn btn-primary">Prev.</a-->
-				 <a href="#topNav" class="btn btn-primary">Go to Top</a>
+				 <a href="#topNav" class="btn btn-primary" style="background-color: rgba(113,54,123,1.00);">Go to Top</a>
 				 <a href="#eModal" data-toggle="modal" class="btn btn-secondary">Next Random Project</a>
 				 <!--a href="#" class="btn btn-primary">Next</a-->
 			   </div>

@@ -6,3 +6,12 @@ function scrollToElement(x) {
           //inline: 'start'
         });
       }
+
+function expandImage(imageUrl) {
+	
+	var modalImage = document.getElementById("expandedImage");
+	
+	modalImage.src = imageUrl;
+	$('#imageExpansion').modal("toggle");
+	
+}

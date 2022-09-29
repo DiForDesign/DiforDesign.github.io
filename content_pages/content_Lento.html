@@ -55,6 +55,26 @@
 	  </div>
 	</div>  
 	  
+	<!-- Modal:Expand image: id imageExpansion -->
+    <div class="modal fade" id="imageExpansion" tabindex="-1" role="dialog" aria-labelledby="imageExpansionLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-xl" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="imageExpansionLabel">Image</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+ 	     </div>
+ 	     <div class="modal-body text-center">
+			 <p id="test-output"></p>
+			 <div id="expandModal"><img id="expandedImage" src=".." width="100%"></div>
+ 	     </div>
+ 	     <div class="modal-footer">
+	      </div>
+	    </div>
+	  </div>
+	</div>   
+	  
 	<!--top navbar-->  
 	<div class="container">  
     <nav id="topNav" class="navbar navbar-expand-lg navbar-light bg-light corner-rounded" style="margin-left:-16px;margin-right:-16px">
@@ -179,12 +199,12 @@
  		        </ol>
 			  </nav>  
 			<!-- title block -->
-         	 <div class="jumbotron">
-             <h1 class="text-center" style="color: #160602;"><strong>Lento</strong></h1>
-            <p class="text-center"><em>A mid-range thermometer and hygrometer concept for wooden musical instruments</em></p><br>
+         	 <div class="jumbotron jumbotron-bg-product">
+             <h1 class="text-center title-font"><strong>Lento</strong></h1>
+            <p class="text-center text-white"><em>A mid-range thermometer and hygrometer concept for wooden musical instruments</em></p><br>
 			  <div class="row">
-				  <div class="col-12 text-center">
-					<h6>| Team Project, 2020 | <em>5 min</em> reading time</h6>
+				  <div class="col-12 text-center text-white">
+					<h6><small> Team Project, 2020 | <em>5 min</em> reading time</small></h6>
 				  </div>
 			  </div>
           </div>
@@ -200,7 +220,7 @@
 					<p class="text-justify">Therefore, we proposed a novel design combining thermometer and hygrometer specifically for wooden musical instrument owners and players who desire optimum protection and refer quality products. The design adopted a unique method of measuring temperature and humidity by detecting the internal stress of a wood sample in a confined space. This is a group project where I contributed to the entire process.</p>
 				</div>
 				<div class="col-12 col-lg-6 col-md-9">
-					<img src="../resources/images/cL_01.jpg" width="100%" style="padding-bottom:2%">
+					<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cL_01.jpg" width="100%" style="padding-bottom:2%">
 				 </div>
 			</div>
 			<br><br>
@@ -211,7 +231,7 @@
 					<p class="text-justify">Instead of using existing electrical sensors for measurement, we took a critical step back. Do our users need specific numbers or their instrument in a proper storage condition, eventually? What if there is a more intuitive approach? <br><br> Thus we proposed a novel, intuitive measurement approach with unique aesthetic quality. A sample of the same type of wood as the instrument is put inside a confined frame. As temperature and humidity change, the wood sample will try to expand or contract, resulting in internal stress changes. By measuring the pressure between the sample and the frame using a pressure sensor, we can determine how far the sample might have deformed. Thus we can understand if the surrounding environment is appropriate for the instrument.</p>
 				</div>
 				<div class="col-12 col-lg-7 col-md-9">
-					<img src="../resources/images/cL_02.JPG" width="100%">
+					<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cL_02.JPG" width="100%">
 				</div>
 			</div>
 			<br><br>
@@ -224,13 +244,13 @@
 			</div>
 			<div class="row" style="padding-bottom: 2%">
 				<div class="col-12 col-lg-6">
-					<img src="../resources/images/cL_04.jpg" width="100%" style="padding-bottom:2%">
+					<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cL_04.jpg" width="100%" style="padding-bottom:2%">
 				</div>
 				<div class="col-12 col-lg-6">
-					<img src="../resources/images/cL_05.jpg" width="100%" style="padding-bottom:2%">
+					<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cL_05.jpg" width="100%" style="padding-bottom:2%">
 				</div>
 				<div class="col-12 col-lg-6">
-					<img src="../resources/images/cL_06.jpg" width="100%" style="padding-bottom:2%">
+					<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cL_06.jpg" width="100%" style="padding-bottom:2%">
 				</div>
 			</div>
 			<hr id="section4">
@@ -240,7 +260,7 @@
 					<p class="col-12">The product package should display desirable qualities such as 'quality' and 'reliability'. Thus, we made a few decisions.<br><br> We kept the outside of the package neat and straightforward by using some clean graphics and a sleeve to cover the surface of the box. Such concept can also be seen in many high-end electronics package designs. Thus our users would sense familiarity, predictability and safety.<br><br>The package contents are placed and stacked at the centre of the box with a hierarchy. The arrangement should feel organized and professional</p>
 				</div>
 				<div class="col-12 col-lg-6">
-					<img src="../resources/images/cL_03.JPG" width="100%">
+					<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cL_03.JPG" width="100%">
 				</div>
 			</div>
 			<br><br><br>
@@ -256,11 +276,11 @@
 	<div class="container">  
 	<div class="row" style="margin-top:3%; margin-bottom:1%;padding-top:2%;padding-bottom: 2%; background-color: rgba(35,35,35,0.9)">
 			   <div class="col-12">
-				<h5 class="text-center" style="color:#A2A2A2">- THE END -</h5>
+				<h5 class="text-center title-font">THE END</h5>
 			   </div>
 			   <div class="col-12 text-center">
 				 <!--a href="#" class="btn btn-primary">Prev.</a-->
-				 <a href="#topNav" class="btn btn-primary">Go to Top</a>
+				 <a href="#topNav" class="btn btn-primary" style="background-color: rgba(113,54,123,1.00);">Go to Top</a>
 				 <a href="#eModal" data-toggle="modal" class="btn btn-secondary">Next Random Project</a>
 				 <!--a href="#" class="btn btn-primary">Next</a-->
 			   </div>

@@ -55,6 +55,26 @@
 	  </div>
 	</div>  
 	  
+	<!-- Modal:Expand image: id imageExpansion -->
+    <div class="modal fade" id="imageExpansion" tabindex="-1" role="dialog" aria-labelledby="imageExpansionLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-xl" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="imageExpansionLabel">Image</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+ 	     </div>
+ 	     <div class="modal-body text-center">
+			 <p id="test-output"></p>
+			 <div id="expandModal"><img id="expandedImage" src=".." width="100%"></div>
+ 	     </div>
+ 	     <div class="modal-footer">
+	      </div>
+	    </div>
+	  </div>
+	</div>   
+	  
 	<!--top navbar-->  
 	<div class="container">  
     <nav id="topNav" class="navbar navbar-expand-lg navbar-light bg-light corner-rounded" style="margin-left:-16px;margin-right:-16px">
@@ -179,12 +199,12 @@
  		        </ol>
 			  </nav>  
 			<!-- title block -->
-         	 <div class="jumbotron">
-             <h1 class="text-center" style="color: #310A26;"><strong>Anti-Vibration Metamaterial Glove</strong></h1>
-            <p class="text-center"><em>A construction glove concept for protecting workers from harmful vibration.</em></p><br>
+         	 <div class="jumbotron jumbotron-bg-product">
+             <h1 class="text-center title-font"><strong>Anti-Vibration Metamaterial Glove</strong></h1>
+            <p class="text-center text-white"><em>A construction glove concept for protecting workers from harmful vibration.</em></p><br>
 			  <div class="row">
-				  <div class="col-12 text-center">
-					<h6>| Individual Project by Di Ba, 2020 | <em>5 min</em> reading time</h6>
+				  <div class="col-12 text-center text-white">
+					<h6><small> Individual Project by Di Ba, 2020 | <em>5 min</em> reading time</small></h6>
 				  </div>
 			  </div>
           </div>
@@ -219,7 +239,7 @@
 					 </div>
 				</div>
 				<div class="col-12 col-lg-6 col-md-9">
-					<img src="../resources/images/cG_01.jpg" width="100%">
+					<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cG_01.jpg" width="100%">
 				 </div>
 			</div>
 			<br><br>
@@ -248,7 +268,7 @@
 					 </div>
 				</div>
 				<div class="col-12 col-lg-6 col-md-9">
-					<img src="../resources/images/cG_02.jpg" width="100%">
+					<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cG_02.jpg" width="100%">
 				</div>
 			</div>
 			<br><br>
@@ -261,12 +281,12 @@
 			</div>
 			<div class="row" style="padding-bottom: 2%">
 				<div class="col-12 col-lg-6">
-					<img src="../resources/images/cG_03.jpg" width="100%" style="padding-bottom:2%">
-					<img src="../resources/images/cG_05.jpg" width="100%" style="padding-bottom:2%">
+					<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cG_03.jpg" width="100%" style="padding-bottom:2%">
+					<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cG_05.jpg" width="100%" style="padding-bottom:2%">
 				</div>
 				<div class="col-12 col-lg-6">
-					<img src="../resources/images/cG_04.jpg" width="100%" style="padding-bottom:2%">
-					<img src="../resources/images/cG_06.jpg" width="100%" style="padding-bottom:2%">
+					<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cG_04.jpg" width="100%" style="padding-bottom:2%">
+					<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cG_06.jpg" width="100%" style="padding-bottom:2%">
 				</div>
 			</div>
 			<br><br>
@@ -277,7 +297,7 @@
 					<p class="text-justify">Sensors inside the glove measure vibration and usage data. The data can provide information for research and development purposes and allow better business strategy for equipment suppliers and redistributors.</p>
 				</div>
 				<div class="col-12 col-lg-8">
-					<img src="../resources/images/cG_07.png" width="100%">
+					<img class="cursor-pointer" onclick="expandImage(this.src)" src="../resources/images/cG_07.png" width="100%">
 				</div>
 			</div>
 			<br><br><br>
@@ -293,11 +313,11 @@
 	<div class="container">  
 	<div class="row" style="margin-top:3%; margin-bottom:1%;padding-top:2%;padding-bottom: 2%; background-color: rgba(35,35,35,0.9)">
 			   <div class="col-12">
-				<h5 class="text-center" style="color:#A2A2A2">- THE END -</h5>
+				<h5 class="text-center title-font">THE END</h5>
 			   </div>
 			   <div class="col-12 text-center">
 				 <!--a href="#" class="btn btn-primary">Prev.</a-->
-				 <a href="#topNav" class="btn btn-primary">Go to Top</a>
+				 <a href="#topNav" class="btn btn-primary" style="background-color: rgba(113,54,123,1.00);">Go to Top</a>
 				 <a href="#eModal" data-toggle="modal" class="btn btn-secondary">Next Random Project</a>
 				 <!--a href="#" class="btn btn-primary">Next</a-->
 			   </div>
